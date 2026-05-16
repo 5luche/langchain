@@ -306,7 +306,7 @@ def demo_basic():
     print("📌 Demo 1: 基础对话")
     print("="*50)
     llm = ChatCodex(model="gpt-5.3-codex")
-    response = llm.invoke([HumanMessage(content="用 Python 写一个快速排序，加注释")])
+    response = llm.invoke([HumanMessage(content="你是谁")])
     print(response.content)
 
 
@@ -367,7 +367,7 @@ if __name__ == "__main__":
     print("使用的 auth 文件:", _find_auth_json())
 
     # 选择要跑的 demo
-    demo_basic()
+    # demo_basic()
     # demo_streaming()   # 取消注释启用
     # demo_multi_turn()  # 取消注释启用
     # demo_langchain_chain()  # 取消注释启用
